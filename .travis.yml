@@ -3,8 +3,10 @@ solution: "./certexp.sln"
 script: msbuild /p:Configuration=Release certexp.sln
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: jMhsQk36D//PFiMTC8hphscIW2bQxpJWBRoLcLZ0/pcEfkR1+vbEzFXId4skkPLefD3aPGZcrRw4oYzQdzqB3+2AJ0k3On569NtJylcg68jGEmdPP89vl22Uld99ZUgLfhynvv1ajvpSR6KqEworAo7RHDpWwvxPNB4ZhRKfUFoYnCvwOSmp6F+rDfFD9HHAFIPMvaydZgSPq6fi1mGpEOEo/3WXzLeRgORnM41R+qoRt6EFuH+621xQF811kOrbedTkf3yFsDD5w08bjvlgEoWRn+06bSxcIu+lQM/uOuYR4cJ74mC42dkJvdY2QFXmcDCCcGPaFQEyV4iEhp6f3lGnja3EVzSCy835b97y2OkPPk/MuPHR18sj+0osAEKW+ODYK1+xlHhAa34yezOCOsGHqjNbnQLJdLTVZgFsWTUjIM91LsXPSvQsR0OA7rrpE+3ZGtKvgSx2E95qYf9857qzTlFBjRXilx8YCBkkffwmH+wncQ9PCMLMvgDjizt7ASBqSACYySLgOdtJXkfORw5wuqxttLkiASl2QIJMJNYLzP2So5wCzYuYx8786+OSqesQZiQBUS9W/Om0L+Wr9ZK0PR/fg6h2GNlIGYZdUMn8iSd6Jt3zlUH0g1OszbbW+BzOFlqds+HgX77y6LRk6U4SW4OEB7tgm1GpPH6DSNI=
   file: certexp/bin/Release/certexp.exe
   on:
+    tags: true
     repo: mubix/certexp

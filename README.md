@@ -1,5 +1,5 @@
 # certexp
-Certificate Export Utility v0.1
+Certificate Export Utility v1.0
 
 [![Build Status](https://travis-ci.org/mubix/certexp.svg?branch=master)](https://travis-ci.org/mubix/certexp)
 

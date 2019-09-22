@@ -1,0 +1,3 @@
+language: csharp
+solution: "./certexp.sln"
+script: xbuild ./certexp.sln

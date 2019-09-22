@@ -1,6 +1,8 @@
 # certexp
 Certificate Export Utility
 
+[![Build Status](https://travis-ci.org/mubix/certexp.svg?branch=master)](https://travis-ci.org/mubix/certexp)
+
 Example Run:
 
 ```

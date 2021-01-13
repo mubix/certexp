@@ -5,7 +5,7 @@ using System.IO;
 
 namespace certexp
 {
-    class Program
+    static class Program
     {
         static void try_export(System.Security.Cryptography.X509Certificates.X509Store store, string pass)
         {
